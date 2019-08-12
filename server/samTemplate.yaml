@@ -27,7 +27,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:aftermatchupdatewalletandstatus/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:aftermatchupdatewalletandstatus/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -77,7 +77,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:ballbyball/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:ballbyball/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -127,7 +127,7 @@ Resources:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
                 credentials: "arn:aws:iam::488599217855:role/Bangalore_PE"
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:fetchdata/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:fetchdata/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -183,7 +183,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:fetchplayerdata/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:fetchplayerdata/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -235,7 +235,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:leaderboardbymatch/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:leaderboardbymatch/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -287,7 +287,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:listmatches/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:listmatches/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -339,7 +339,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:livescore/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:livescore/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -391,7 +391,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:myopponentsteam/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:myopponentsteam/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -444,7 +444,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:mymatches/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:mymatches/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -496,7 +496,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:privatematches/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:privatematches/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -549,7 +549,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:publicmatches/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:publicmatches/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -601,7 +601,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:updateuserwallet/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:updateuserwallet/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -655,7 +655,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:userdata/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:userdata/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -708,7 +708,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:usermatchreg/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:usermatchreg/invocations"
                 responses:
                   default:
                     statusCode: "200"
@@ -761,7 +761,7 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:488599217855:function:userprofile/invocations"
+                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:userprofile/invocations"
                 responses:
                   default:
                     statusCode: "200"
