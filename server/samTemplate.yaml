@@ -821,7 +821,6 @@ Resources:
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
       - arn:aws:iam::aws:policy/CloudWatchLogsFullAccess
       Events:
-        Events:
         AddApi1:
           Type: Api
           Properties:
