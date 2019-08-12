@@ -1087,7 +1087,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
-     Handler: userdata.lambda_handler
+      Handler: userdata.lambda_handler
       Runtime: python3.7
       CodeUri: ./dream11/server/userdata.py
       Description: Lambda handler for API Gateway of userdata
@@ -1107,6 +1107,8 @@ Resources:
             Method: GET  
   aftermatchupdatewalletandstatus:
     Type: 'AWS::Serverless::Function'
+    Dependson:
+    - Dream11Gateway
     Properties:
       Handler: aftermatchupdatewalletandstatus.lambda_handler
       Runtime: python3.7
@@ -1128,6 +1130,8 @@ Resources:
             Method: POST
   livescore:
     Type: 'AWS::Serverless::Function'
+    Dependson:
+    - Dream11Gateway
     Properties:
       Handler: livescore.lambda_handler
       Runtime: python3.7
