@@ -1,12 +1,13 @@
-version: 0.2
-phases:
-  install:
-    runtime-versions:
-        python: 3.7
-    commands:
-      - aws cloudformation package --template-file server/samTemplate.yaml --s3-bucket dr11-prashanth --output-template-file server/outputTemplate.yaml
-artifacts:
-  type: zip
-  files:
+--- 
+artifacts: 
+  files: 
     - samTemplate.yaml
     - outputTemplate.yaml
+  type: zip
+phases: 
+  install: 
+    commands: 
+      - "aws cloudformation package --template-file server/samTemplate.yaml --s3-bucket dr11-prashanth --output-template-file server/outputTemplate.yaml"
+    runtime-versions: 
+      python: 3.7
+version: 0.2
