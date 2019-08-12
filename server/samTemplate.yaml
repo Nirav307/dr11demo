@@ -10,12 +10,12 @@ Resources:
         swagger: "2.0"
         info:
           version: "2019-08-10T15:44:35Z"
-          title: "Dream11Api"
+          title: "Dream11Gateway"
         basePath: "/test"
         schemes:
         - "https"
         paths:
-          /after-match-update-wallet:
+          /aftermatchupdatewallet:
             post:
               consumes:
               - "application/json"
@@ -114,7 +114,7 @@ Resources:
                 requestTemplates:
                   application/json: "{\"statusCode\": 200}"
                 type: "mock"
-          /fetch-data:
+          /fetchdata:
             post:
               consumes:
               - "application/json"
@@ -223,7 +223,7 @@ Resources:
                 requestTemplates:
                   application/json: "{\"statusCode\": 200}"
                 type: "mock"
-          /leaderboard-by-match:
+          /leaderboardbymatch:
             get:
               consumes:
               - "application/json"
@@ -379,7 +379,7 @@ Resources:
                 requestTemplates:
                   application/json: "{\"statusCode\": 200}"
                 type: "mock"
-          /my-opponents-team:
+          /myopponentsteam:
             get:
               consumes:
               - "application/json"
@@ -484,7 +484,7 @@ Resources:
                 requestTemplates:
                   application/json: "{\"statusCode\": 200}"
                 type: "mock"
-          /private-match:
+          /privatematch:
             get:
               consumes:
               - "application/json"
@@ -537,7 +537,7 @@ Resources:
                 requestTemplates:
                   application/json: "{\"statusCode\": 200}"
                 type: "mock"
-          /public-matches-list:
+          /publicmatcheslist:
             get:
               consumes:
               - "application/json"
@@ -589,7 +589,7 @@ Resources:
                 requestTemplates:
                   application/json: "{\"statusCode\": 200}"
                 type: "mock"
-          /update-userwallet:
+          /updateuserwallet:
             post:
               consumes:
               - "application/json"
@@ -643,7 +643,7 @@ Resources:
                 requestTemplates:
                   application/json: "{\"statusCode\": 200}"
                 type: "mock"
-          /user-data:
+          /userdata:
             get:
               consumes:
               - "application/json"
@@ -696,7 +696,7 @@ Resources:
                 requestTemplates:
                   application/json: "{\"statusCode\": 200}"
                 type: "mock"
-          /user-match-reg:
+          /usermatchreg:
             post:
               consumes:
               - "application/json"
@@ -851,7 +851,7 @@ Resources:
           Properties:
             RestApiId:
               Ref: Dream11Gateway
-            Path: /fetch-data
+            Path: /fetchdata
             Method: POST
   userprofile:
     Type: AWS::Serverless::Function
@@ -923,7 +923,7 @@ Resources:
           Properties:
             RestApiId:
               Ref: Dream11Gateway
-            Path: /user-match-reg
+            Path: /usermatchreg
             Method: POST                          
   updateuserwallet:
     Type: AWS::Serverless::Function
@@ -947,7 +947,7 @@ Resources:
           Properties:
             RestApiId:
               Ref: Dream11Gateway
-            Path: /update-userwallet
+            Path: /updateuserwallet
             Method: POST  
   ballbyball:
     Type: AWS::Serverless::Function
@@ -1019,7 +1019,7 @@ Resources:
           Properties:
             RestApiId:
               Ref: Dream11Gateway
-            Path: /leaderboard-by-match
+            Path: /leaderboardbymatch
             Method: GET     
   myopponentsteam:
     Type: AWS::Serverless::Function
@@ -1091,7 +1091,7 @@ Resources:
           Properties:
             RestApiId:
               Ref: Dream11Gateway
-            Path: /public-matches-list
+            Path: /publicmatcheslist
             Method: GET  
   userdata:
     Type: AWS::Serverless::Function
@@ -1115,7 +1115,7 @@ Resources:
           Properties:
             RestApiId:
               Ref: Dream11Gateway
-            Path: /user-data
+            Path: /userdata
             Method: GET  
   aftermatchupdatewalletandstatus:
     Type: 'AWS::Serverless::Function'
@@ -1139,7 +1139,7 @@ Resources:
           Properties:
             RestApiId:
               Ref: Dream11Gateway
-            Path: /after-match-update-wallet
+            Path: /aftermatchupdatewallet
             Method: POST
   livescore:
     Type: 'AWS::Serverless::Function'
