@@ -4,7 +4,7 @@ phases:
     runtime-versions:
         python: 3.7
     commands:
-      - aws cloudformation package --template-file server/samTemplate.yaml --s3-bucket dr11-prashanth --output-template-file server/outputTemplate.yaml
+      - aws cloudformation package --template-file server/samTemplate.yaml --s3-bucket dr11-frontend --output-template-file server/outputTemplate.yaml
 artifacts:
   type: zip
   files:
