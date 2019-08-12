@@ -27,7 +27,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:aftermatchupdatewalletandstatus/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:aftermatchupdatewalletandstatus/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -77,7 +78,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:ballbyball/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:ballbyball/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -127,7 +129,8 @@ Resources:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
                 credentials: "arn:aws:iam::488599217855:role/Bangalore_PE"
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:fetchdata/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:fetchdata/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -183,7 +186,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:fetchplayerdata/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:fetchplayerdata/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -235,7 +239,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:leaderboardbymatch/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:leaderboardbymatch/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -287,7 +292,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:listmatches/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:listmatches/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -339,7 +345,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:livescore/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:livescore/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -391,7 +398,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:myopponentsteam/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:myopponentsteam/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -444,7 +452,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:mymatches/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:mymatches/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -496,7 +505,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:privatematches/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:privatematches/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -549,7 +559,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:publicmatches/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:publicmatches/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -601,7 +612,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:updateuserwallet/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:updateuserwallet/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -655,7 +667,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:userdata/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:userdata/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -708,7 +721,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:usermatchreg/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:usermatchreg/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -761,7 +775,8 @@ Resources:
                   schema:
                     $ref: "#/definitions/Empty"
               x-amazon-apigateway-integration:
-                uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:488599217855:function:userprofile/invocations"
+                uri: 
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:userprofile/invocations
                 responses:
                   default:
                     statusCode: "200"
@@ -815,8 +830,8 @@ Resources:
       Runtime: python3.7
       CodeUri: ./listmatches.py
       Description: ''
-      MemorySize: 128
-      Timeout: 123
+      MemorySize: 256
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -839,8 +854,8 @@ Resources:
       Runtime: python3.7
       CodeUri: ./fetchdata.py
       Description: ''
-      MemorySize: 128
-      Timeout: 659
+      MemorySize: 256
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -864,7 +879,7 @@ Resources:
       CodeUri: ./userprofile.py
       Description: Lambda handler for API Gateway of userprofile
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -888,7 +903,7 @@ Resources:
       CodeUri: ./mymatches.py
       Description: Lambda handler for API Gateway of mymatches
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -912,7 +927,7 @@ Resources:
       CodeUri: ./usermatchreg.py
       Description: Lambda handler for API Gateway of usermatchreg
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -936,7 +951,7 @@ Resources:
       CodeUri: ./updateuserwallet.py
       Description: Lambda handler for API Gateway of updateuserwallet
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -960,7 +975,7 @@ Resources:
       CodeUri: ./ballbyball.py
       Description: Lambda handler for API Gateway of updateballbyball
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -984,7 +999,7 @@ Resources:
       CodeUri: ./fetchplayerdata.py
       Description: Lambda handler for API Gateway of leaguespagelambda
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -1008,7 +1023,7 @@ Resources:
       CodeUri: ./leaderboardbymatch.py
       Description: Lambda handler for API Gateway of leaderboardbymatch
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -1032,7 +1047,7 @@ Resources:
       CodeUri: ./myopponentsteam.py
       Description: Lambda handler for API Gateway of myopponentsteam
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -1056,7 +1071,7 @@ Resources:
       CodeUri: ./privatematches.py
       Description: Lambda handler for API Gateway of privatematches
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -1080,7 +1095,7 @@ Resources:
       CodeUri: ./publicmatches.py
       Description: Lambda handler for API Gateway of publicmatches
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
@@ -1104,7 +1119,7 @@ Resources:
       CodeUri: ./userdata.py
       Description: Lambda handler for API Gateway of userdata
       MemorySize: 256
-      Timeout: 60
+      Timeout: 600
       Policies:
       - arn:aws:iam::aws:policy/AmazonS3FullAccess
       - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
