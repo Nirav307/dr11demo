@@ -810,6 +810,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: listmatches
       Handler: listmatches.lambda_handler
       Runtime: python3.7
       CodeUri: ./listmatches.py
@@ -833,6 +834,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: fetchdata
       Handler: fetchdata.lambda_handler
       Runtime: python3.7
       CodeUri: ./fetchdata.py
@@ -856,6 +858,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: userprofile
       Handler: userprofile.lambda_handler
       Runtime: python3.7
       CodeUri: ./userprofile.py
@@ -879,6 +882,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: mymatches
       Handler: mymatches.lambda_handler
       Runtime: python3.7
       CodeUri: ./mymatches.py
@@ -902,6 +906,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: usermatchreg
       Handler: usermatchreg.lambda_handler
       Runtime: python3.7
       CodeUri: ./usermatchreg.py
@@ -925,6 +930,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: updateuserwallet
       Handler: updateuserwallet.lambda_handler
       Runtime: python3.7
       CodeUri: ./updateuserwallet.py
@@ -948,6 +954,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: ballbyball
       Handler: ballbyball.lambda_handler
       Runtime: python3.7
       CodeUri: ./ballbyball.py
@@ -971,6 +978,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: fetchplayerdata
       Handler: fetchplayerdata.lambda_handler
       Runtime: python3.7
       CodeUri: ./fetchplayerdata.py
@@ -994,6 +1002,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: leaderboardbymatch
       Handler: leaderboardbymatch.lambda_handler
       Runtime: python3.7
       CodeUri: ./leaderboardbymatch.py
@@ -1017,6 +1026,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: myopponentsteam
       Handler: myopponentsteam.lambda_handler
       Runtime: python3.7
       CodeUri: ./myopponentsteam.py
@@ -1040,6 +1050,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: privatematches
       Handler: privatematches.lambda_handler
       Runtime: python3.7
       CodeUri: ./privatematches.py
@@ -1063,6 +1074,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: publicmatches
       Handler: publicmatches.lambda_handler
       Runtime: python3.7
       CodeUri: ./publicmatches.py
@@ -1086,6 +1098,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: userdata
       Handler: userdata.lambda_handler
       Runtime: python3.7
       CodeUri: ./userdata.py
@@ -1109,6 +1122,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: aftermatchupdatewalletandstatus
       Handler: aftermatchupdatewalletandstatus.lambda_handler
       Runtime: python3.7
       CodeUri: ./aftermatchupdatewalletandstatus.py
@@ -1132,6 +1146,7 @@ Resources:
     Dependson:
     - Dream11Gateway
     Properties:
+      FunctionName: livescore
       Handler: livescore.lambda_handler
       Runtime: python3.7
       CodeUri: ./livescore.py
